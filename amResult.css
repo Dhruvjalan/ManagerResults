@@ -1,0 +1,26 @@
+.max-section {
+	background-image: linear-gradient(to bottom right, #000000, #494949);
+}
+
+.vertical-button {
+	background-color: #4f1cdda1;
+}
+
+.vertical-card {
+	border: 1px solid black;
+	background-image: linear-gradient(to top, #fc00ff, #7ec8f1, #865bff);
+}
+
+.title-text {
+	background: linear-gradient(to right, #ffe7b9, #ffa200);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.subtitle-text {
+	background: linear-gradient(to right, #ffe7b9, #ffa200);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}

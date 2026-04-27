@@ -407,7 +407,7 @@
 				<!-- end: Portfolio -->
 				<div class="container-m outfit" id="card-container"></div>
 				<script>
-					const teams = [
+					 let teams = [
 						{
 							imgSrc: "/assets/CR.webp",
 							title: "CORPORATE RELATIONS",
@@ -446,14 +446,14 @@
 							imgSrc: "/assets/ER.png",
 							title: "INSPIRIT",
 							members: [
-								{ name: "Ambar", roll: "CH25B011" },
-								{ name: "Anoushka", roll: "NA25B012" },
-								{ name: "Kunjal", roll: "AE25B025" },
-								{ name: "Parvathy", roll: "NA25B056" },
-								{ name: "Rohan", roll: "CH25B078" },
-								{ name: "Shanmukha", roll: "AM25B033" },
-								{ name: "Soumi", roll: "CH25B091" },
-								{ name: "Sriniketh", roll: "ED25B065" }
+								{ name: "Ambar Shrivastava", roll: "CH25B011" },
+								{ name: "Anoushka Fiona", roll: "NA25B012" },
+								{ name: "Kunjal Narkhede", roll: "AE25B025" },
+								{ name: "Parvathy S Prem", roll: "NA25B056" },
+								{ name: "Rohan S", roll: "CH25B078" },
+								{ name: "Shanmukha Priya", roll: "AM25B033" },
+								{ name: "Soumi Dana", roll: "CH25B091" },
+								{ name: "Sriniketh Reddy", roll: "ED25B065" }
 							],
 						},
 						{
@@ -535,6 +535,14 @@
 							],
 						},
 					];
+					const sortTeamMembers = (teamData) => {
+					teamData.forEach(team => {
+						team.members.sort((a, b) => a.name.localeCompare(b.name));
+					});
+					return teamData;
+					};
+
+					teams = sortTeamMembers(teams);
 
 					function createCard(item, index) {
 						const cardContainer = document.createElement("div");
